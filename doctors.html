@@ -40,12 +40,12 @@
 </head>
 <body class="bg-[#FAF8F5] text-slate-800 antialiased selection:bg-red-500 selection:text-white">
 
-  <!-- NAVBAR -->
-  <nav class="bg-white border-b border-[#EAE5DC] py-1.5 sm:py-1 px-3 sm:px-6 shadow-xs sticky top-0 z-40 backdrop-blur-md bg-white/95">
-    <div class="max-w-6xl mx-auto flex items-center justify-between">
+  <!-- 1. NAVBAR (3-Line Hamburger Left, Absolutely Centered Logo, Compact Call Now Right) -->
+  <nav class="bg-white border-b border-[#EAE5DC] py-1 px-3 sm:px-6 shadow-xs sticky top-0 z-40 backdrop-blur-md bg-white/95">
+    <div class="max-w-6xl mx-auto relative flex items-center justify-between min-h-[58px] sm:min-h-[68px]">
       
       <!-- Top Left: 3-Line Hamburger Menu Button -->
-      <button onclick="toggleMenu()" aria-label="Menu" class="p-2 text-slate-800 hover:text-[#0D3268] focus:outline-none transition shrink-0 flex items-center justify-center">
+      <button onclick="toggleMenu()" aria-label="Menu" class="p-1.5 text-slate-800 hover:text-[#0D3268] focus:outline-none transition shrink-0 z-10 flex items-center justify-center">
         <svg class="w-6 h-6 stroke-current" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
@@ -53,13 +53,13 @@
         </svg>
       </button>
 
-      <!-- Middle: Logo Centered -->
-      <a href="index.html" class="flex items-center justify-center flex-1 px-1">
-        <img src="logo.png" alt="Emergency Care BD" class="h-14 sm:h-18 lg:h-20 w-auto max-w-[215px] sm:max-w-[300px] object-contain" />
+      <!-- Middle: EXACTLY In The Center (Absolute 50% Horizontal Translation) -->
+      <a href="index.html" class="absolute left-1/2 -translate-x-1/2 flex items-center justify-center z-0">
+        <img src="logo.png" alt="Emergency Care BD" class="h-12 sm:h-16 lg:h-18 w-auto max-w-[170px] sm:max-w-[260px] object-contain" />
       </a>
 
       <!-- Top Right: Short Call Now Button -->
-      <a href="tel:01716788301" class="inline-flex items-center gap-1.5 bg-[#D9222A] hover:bg-red-700 text-white font-black text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-xl shadow-xs transition pulse-call shrink-0">
+      <a href="tel:01716788301" class="inline-flex items-center gap-1 bg-[#D9222A] hover:bg-red-700 text-white font-black text-xs sm:text-sm px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-xl shadow-xs transition pulse-call shrink-0 z-10">
         <svg class="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
         <span>Call Now</span>
       </a>
