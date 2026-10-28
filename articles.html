@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>জরুরি স্বাস্থ্য সহায়িকা ও আইসিইউ গাইড | Emergency Care BD</title>
+  <meta name="description" content="জরুরি আইসিইউ, এনআইসিইউ, সিসিইউ বেড ভর্তি ও জেলা থেকে অ্যাম্বুলেন্সে রোগী ঢাকায় স্থানান্তরের জরুরি গাইড ও তথ্যবহুল স্বাস্থ্য সহায়িকা। দালালমুক্ত সরাসরি সাশ্রয়ী হাসপাতাল ভর্তি।" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    * { font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; box-sizing: border-box; }
+    body { background-color: #FAF8F5; color: #1E293B; padding-bottom: 74px; }
+    @media (min-width: 768px) { body { padding-bottom: 0; } }
+    
+    @keyframes pulseCall {
+      0% { box-shadow: 0 0 0 0 rgba(217, 34, 42, 0.6); }
+      70% { box-shadow: 0 0 0 10px rgba(217, 34, 42, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(217, 34, 42, 0); }
+    }
+    .pulse-call { animation: pulseCall 2s infinite; }
+    
+    .clean-card {
+      background: #FFFFFF;
+      border: 1px solid #EAE5DC;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .clean-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 24px -6px rgba(13, 50, 104, 0.08);
+      border-color: #CBD5E1;
+    }
+    .cat-btn.active {
+      background-color: #0D3268;
+      color: #FFFFFF;
+      border-color: #0D3268;
+    }
+    
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+    details summary {
+      list-style: none;
+    }
+  </style>
+</head>
+<body class="bg-[#FAF8F5] text-slate-800 antialiased selection:bg-red-500 selection:text-white">
+
+  <!-- NAVBAR -->
+  <nav class="bg-white border-b border-[#EAE5DC] py-3 px-4 sm:px-6 shadow-xs sticky top-0 z-40 backdrop-blur-md bg-white/95">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-slate-200 bg-white overflow-hidden shadow-xs shrink-0 flex items-center justify-center">
+          <img src="logo.png" alt="Emergency Care BD" class="w-full h-full object-contain p-0.5" />
+        </div>
+        <div>
+          <div class="text-lg sm:text-xl font-black text-[#0D3268] tracking-tight leading-none">
+            Emergency <span class="text-[#D9222A]">Care</span> BD
+          </div>
+          
+        </div>
+      </a>
+
+      <!-- Center Nav Links -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
+        <a href="index.html" class="hover:text-[#D9222A] transition">হোম (জরুরি বেড)</a>
+        <a href="doctors.html" class="hover:text-[#D9222A] transition">ডাক্তার তালিকা</a>
+        <a href="articles.html" class="text-[#D9222A] font-black border-b-2 border-[#D9222A] pb-0.5">স্বাস্থ্য সহায়িকা</a>
+      </div>
+      
+      <!-- Call Button -->
+      <a href="tel:01716788301" class="inline-flex items-center gap-1.5 sm:gap-2 bg-[#D9222A] hover:bg-red-700 text-white font-black text-xs sm:text-sm px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-xs transition pulse-call shrink-0">
+        <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span class="hidden sm:inline">জরুরি কথা বলুন: 01716-788301</span>
+        <span class="sm:hidden">কল: 01716-788301</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- MOBILE SUB-NAVIGATION BAR -->
+  <div class="md:hidden bg-slate-50 border-b border-[#EAE5DC] px-4 py-2 flex items-center justify-around text-xs font-bold text-slate-600">
+    <a href="index.html" class="py-1">হোম (জরুরি বেড)</a>
+    <a href="doctors.html" class="py-1">ডাক্তার তালিকা</a>
+    <a href="articles.html" class="py-1 text-[#D9222A] font-black border-b-2 border-[#D9222A]">স্বাস্থ্য সহায়িকা</a>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="py-8 sm:py-12 px-4 sm:px-6 bg-gradient-to-b from-white to-[#FAF8F5] border-b border-[#EAE5DC]">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-50 border border-red-200 text-[#D9222A] text-xs font-bold mb-3 shadow-xs">
+        <span class="w-2 h-2 rounded-full bg-[#D9222A] animate-ping"></span>
+        <span>জীবনরক্ষাকারী স্বাস্থ্য ও মেডিকেল গাইড</span>
+      </div>
+      
+      <h1 class="text-2xl sm:text-4xl font-black text-[#0D3268] leading-tight mb-3">
+        জরুরি আইসিইউ ও স্বাস্থ্য সহায়িকা
+      </h1>
+      
+      <p class="text-sm sm:text-base text-slate-600 font-medium max-w-2xl mx-auto leading-relaxed">
+        বাইরের জেলা থেকে রোগী ঢাকায় আনা, ক্রিটিক্যাল কেয়ার বেড নির্বাচন এবং হাসপাতাল গেটে দালালদের ফাঁদ এড়াতে আমাদের বিশেষজ্ঞদের তৈরি প্র্যাকটিক্যাল গাইড।
+      </p>
+
+      <!-- SEARCH INPUT -->
+      <div class="mt-6 max-w-xl mx-auto">
+        <div class="relative">
+          <input 
+            type="text" 
+            id="article-search" 
+            placeholder="আর্টিকেল বা স্বাস্থ্য বিষয়ক টপিক খুঁজুন (যেমন: ICU, অ্যাম্বুলেন্স, NICU, হার্ট)..." 
+            class="w-full pl-11 pr-4 py-3 rounded-2xl border border-slate-300 bg-white text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-[#0D3268] shadow-sm"
+            oninput="filterArticles()"
+          />
+          <svg class="w-5 h-5 text-slate-400 absolute left-3.5 top-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- CATEGORY FILTER BUTTONS -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mt-4 pt-1">
+        <button onclick="setCategory('all', this)" class="cat-btn active px-3.5 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:border-slate-300 transition">
+          সব আর্টিকেল
+        </button>
+        <button onclick="setCategory('icu', this)" class="cat-btn px-3.5 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:border-slate-300 transition">
+          আইসিইউ গাইড
+        </button>
+        <button onclick="setCategory('ambulance', this)" class="cat-btn px-3.5 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:border-slate-300 transition">
+          অ্যাম্বুলেন্স ট্রানজিট
+        </button>
+        <button onclick="setCategory('nicu', this)" class="cat-btn px-3.5 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:border-slate-300 transition">
+          শিশু ও এনআইসিইউ
+        </button>
+        <button onclick="setCategory('ccu', this)" class="cat-btn px-3.5 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:border-slate-300 transition">
+          হৃদরোগ ও সিসিইউ
+        </button>
+        <button onclick="setCategory('admission', this)" class="cat-btn px-3.5 py-1.5 rounded-xl border border-slate-200 bg-white text-xs font-bold text-slate-700 hover:border-slate-300 transition">
+          দালালমুক্ত ভর্তি ও সাশ্রয়
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN ARTICLES CONTAINER -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-8">
+
+    <!-- FEATURED ARTICLE BANNER -->
+    <div id="featured-banner" class="mb-8 rounded-2xl bg-gradient-to-br from-[#0D3268] to-[#1E4E8C] text-white p-5 sm:p-7 shadow-lg border border-slate-700">
+      <div class="flex flex-col md:flex-row gap-6 items-center justify-between">
+        <div class="space-y-3">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-amber-300 text-xs font-bold backdrop-blur-xs">
+            <span>⭐ বিশেষ জরুরি সতর্কবার্তা</span>
+            <span class="text-white">|</span>
+            <span>৫ মিনিট পাঠ</span>
+          </div>
+          <h2 class="text-xl sm:text-2xl font-black leading-snug">
+            অ্যাম্বুলেন্সে জেলা থেকে রোগী ঢাকায় আনার সময় যে ৫টি মারাত্মক ভুল এড়াবেন
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-200 leading-relaxed max-w-2xl">
+            কুমিল্লা, নোয়াখালী, ফরিদপুর বা উত্তরবঙ্গ থেকে রোগী নিয়ে রওনা হওয়ার আগে ঢাকায় নিশ্চিত ভেন্টিলেটর বেড বুকিং না করা রোগীর জন্য চরম প্রাণঘাতী হতে পারে। বিস্তারিত পড়ুন নিচে।
+          </p>
+        </div>
+        <div class="shrink-0 w-full md:w-auto">
+          <a href="#article-ambulance" class="block text-center bg-[#D9222A] hover:bg-red-700 text-white font-black text-sm px-5 py-3 rounded-xl shadow-md transition">
+            সম্পূর্ণ গাইডটি পড়ুন ↓
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLES LIST -->
+    <div class="space-y-6" id="articles-container">
+
+      <!-- ARTICLE 1: ICU Guide -->
+      <article class="article-card clean-card rounded-2xl p-5 sm:p-7 border border-[#EAE5DC]" data-category="icu" data-search="আইসিইউ icu ভেন্টিলেটর ventilator প্রস্তুতি এবিজি abg ধানমন্ডি">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-lg bg-red-100 text-[#D9222A] font-bold text-xs">আইসিইউ গাইড</span>
+            <span class="text-slate-400 text-xs">•</span>
+            <span class="text-slate-500 text-xs font-semibold">৪ মিনিট পাঠ</span>
+          </div>
+          <span class="text-xs font-bold text-slate-400">আপডেট: অক্টোবর ২০২৬</span>
+        </div>
+
+        <h3 class="text-lg sm:text-xl font-black text-[#0D3268] mb-3 leading-snug">
+          জরুরি আইসিইউ (ICU) বেড নেওয়ার আগে পরিবারের যা জানা জরুরি: সঠিক প্রস্তুতি ও ভেন্টিলেটর সাপোর্ট
+        </h3>
+
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          যখন কোনো রোগীর শ্বাসকষ্ট তীব্র আকার ধারণ করে, রক্তে অক্সিজেনের মাত্রা (SpO2) ৯০%-এর নিচে নেমে যায় বা রক্তচাপ অতিরিক্ত কমে যায়, তখন সাধারণ ওয়ার্ডের বদলে অবিলম্বে ইনটেনসিভ কেয়ার ইউনিট (আইসিইউ)-এর প্রয়োজন হয়। বাইরে থেকে রোগী স্থানান্তরের সময় সঠিক প্রস্তুতি না থাকলে মূল্যবান সময় নষ্ট হয়।
+        </p>
+
+        <details class="group">
+          <summary class="cursor-pointer inline-flex items-center gap-1.5 text-xs sm:text-sm font-black text-[#D9222A] hover:text-red-800 transition">
+            <span class="group-open:hidden">সম্পূর্ণ আর্টিকেল পড়ুন ও প্রস্তুতি জানুন ↓</span>
+            <span class="hidden group-open:inline">সংক্ষেপ করুন ↑</span>
+          </summary>
+          
+          <div class="mt-4 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-700 space-y-3 leading-relaxed">
+            <h4 class="font-bold text-[#0D3268] text-sm">১. রোগীর ফাইল ও কাগজপত্র সাথে রাখুন:</h4>
+            <p>
+              পূর্ববর্তী প্রেসক্রিপশন, সাম্প্রতিক এবিজি (Arterial Blood Gas) টেস্টের রিপোর্ট, সিবিসি, সিরাম ক্রিয়েটিনিন এবং সর্বশেষ ইসিজি রিপোর্ট মূল ফাইলে গুছিয়ে রাখুন। আইসিইউ ডাক্তার এই রিপোর্টগুলো দেখেই তৎক্ষণাৎ ওষুধ ও ইনকিউবেশন নির্ধারণ করতে পারেন।
+            </p>
+            <h4 class="font-bold text-[#0D3268] text-sm">২. মেকানিক্যাল ভেন্টিলেটর নিশ্চিত করুন:</h4>
+            <p>
+              সব আইসিইউ বেডে সর্বাধুনিক ভেন্টিলেটর যুক্ত থাকে না। রোগীর ফুসফুস যদি নিজে থেকে বাতাস টানতে না পারে, তবে ইনভেসিভ ভেন্টিলেটর সাপোর্টের প্রয়োজন হয়। বুকিং দেওয়ার সময় অবশ্যই হাসপাতাল বা সমন্বয়কের কাছে ভেন্টিলেটরের সক্ষমতা নিশ্চিত করুন।
+            </p>
+            <h4 class="font-bold text-[#0D3268] text-sm">৩. রক্তদাতার প্রাথমিক যোগাযোগ:</h4>
+            <p>
+              আইসিইউতে ভর্তির পর প্রায়ই জরুরি ভিত্তিতে ফ্রেশ হোল ব্লাড বা প্লেটলেটের প্রয়োজন পড়ে। পরিবারের একই রক্তের গ্রুপের অন্তত ২ জন সদস্য বা পরিচিত রক্তদাতাকে আগে থেকেই মানসিকভাবে প্রস্তুত রাখুন।
+            </p>
+            
+            <!-- Quick Help Box -->
+            <div class="bg-red-50 p-4 rounded-xl border border-red-200 mt-3 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div>
+                <div class="font-black text-[#D9222A] text-xs sm:text-sm">ধানমন্ডিতে তাৎক্ষণিক আইসিইউ বেড প্রয়োজন?</div>
+                <div class="text-[11px] sm:text-xs text-slate-600">আমাদের হটলাইনে কল দিন, রোগী পৌঁছানোর আগেই বেড প্রস্তুত রাখা হবে।</div>
+              </div>
+              <a href="tel:01716788301" class="shrink-0 bg-[#D9222A] text-white px-4 py-2 rounded-lg font-black text-xs hover:bg-red-700 transition">
+                কল দিন: 01716788301
+              </a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- ARTICLE 2: Ambulance Transit (Anchor: article-ambulance) -->
+      <article id="article-ambulance" class="article-card clean-card rounded-2xl p-5 sm:p-7 border border-[#EAE5DC]" data-category="ambulance" data-search="অ্যাম্বুলেন্স ambulance ট্রানজিট হাইওয়ে মহাসড়ক অক্সিজেন সিলিন্ডার নোয়াখালী কুমিল্লা">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-lg bg-blue-100 text-[#0D3268] font-bold text-xs">অ্যাম্বুলেন্স ট্রানজিট</span>
+            <span class="text-slate-400 text-xs">•</span>
+            <span class="text-slate-500 text-xs font-semibold">৫ মিনিট পাঠ</span>
+          </div>
+          <span class="text-xs font-bold text-slate-400">আপডেট: অক্টোবর ২০২৬</span>
+        </div>
+
+        <h3 class="text-lg sm:text-xl font-black text-[#0D3268] mb-3 leading-snug">
+          অ্যাম্বুলেন্সে জেলা থেকে রোগী ঢাকায় আনার সময় যে ৫টি মারাত্মক ভুল এড়াবেন
+        </h3>
+
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          প্রতিদিন দেশের বিভিন্ন জেলা থেকে শত শত মুমূর্ষু রোগী ঢাকায় রেফার করা হয়। কিন্তু দীর্ঘ পথ পাড়ি দেওয়ার সময় পরিবারের ছোটখাটো ভুলের কারণে রোগীর অবস্থা সংকটাপন্ন হয়ে পড়ে। নিরাপদ ট্রানজিটের জন্য নিচের ৫টি বিষয় অত্যন্ত সতর্কতার সাথে পালন করা উচিত।
+        </p>
+
+        <details class="group" open>
+          <summary class="cursor-pointer inline-flex items-center gap-1.5 text-xs sm:text-sm font-black text-[#D9222A] hover:text-red-800 transition">
+            <span class="group-open:hidden">সম্পূর্ণ আর্টিকেল পড়ুন ও ৫টি ভুল জানুন ↓</span>
+            <span class="hidden group-open:inline">সংক্ষেপ করুন ↑</span>
+          </summary>
+          
+          <div class="mt-4 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-700 space-y-3 leading-relaxed">
+            <h4 class="font-bold text-[#0D3268] text-sm">১. ঢাকায় বেড কনফার্ম না করে তাড়াহুড়ো করে রওনা দেওয়া:</h4>
+            <p>
+              সবচেয়ে বড় ভুল হলো বেড প্রস্তুত আছে কি না নিশ্চিত না হয়েই ঢাকা অভিমুখে রওনা হওয়া। ঢাকায় পৌঁছে এক হাসপাতাল থেকে আরেক হাসপাতালে ঘুরতে ঘুরতে অ্যাম্বুলেন্সে মূল্যবান সময় নষ্ট হয় এবং রোগীর অবস্থা আশঙ্কাজনক হয়ে পড়ে। সবসময় রওনা হওয়ার পরই ঢাকার হাসপাতালে বেড বুকিং সম্পন্ন করুন।
+            </p>
+            <h4 class="font-bold text-[#0D3268] text-sm">২. সাধারণ অ্যাম্বুলেন্স বনাম আইসিইউ অ্যাম্বুলেন্সের পার্থক্য না বোঝা:</h4>
+            <p>
+              ভেন্টিলেটর বা কৃত্রিম শ্বাসপ্রশ্বাসে থাকা রোগীর জন্য সাধারণ সিলিন্ডারযুক্ত মাইক্রোবাস অ্যাম্বুলেন্স বিপজ্জনক। এ ধরনের রোগীর ক্ষেত্রে ইনবিল্ট ভেন্টিলেটর, সাকশন ও কার্ডিয়াক মনিটরযুক্ত লাইফ সাপোর্ট আইসিইউ অ্যাম্বুলেন্স এবং অভিজ্ঞ প্যারামেডিক নিশ্চিত করুন।
+            </p>
+            <h4 class="font-bold text-[#0D3268] text-sm">৩. অতিরিক্ত অক্সিজেন রিজার্ভের অভাব:</h4>
+            <p>
+              মহাসড়কে যানজটের কারণে ঢাকা পৌঁছাতে অতিরিক্ত ২ থেকে ৪ ঘণ্টা সময় বেশি লাগতে পারে। রওনা দেওয়ার সময় অন্তত ২টি পূর্ণ অক্সিজেন সিলিন্ডার আছে কি না যাচাই করে নিন।
+            </p>
+            <h4 class="font-bold text-[#0D3268] text-sm">৪. রোগীর শারীরিক ভাইটালস নিয়মিত মনিটর না করা:</h4>
+            <p>
+              জার্নির পুরোটা সময় পালস অক্সিমিটার দিয়ে অক্সিজেন স্যাচুরেশন এবং রক্তচাপ প্রতি ২০ মিনিট পর পর চেক করতে হবে।
+            </p>
+            <h4 class="font-bold text-[#0D3268] text-sm">৫. হাসপাতাল গেটে দালালের মিষ্টি কথায় পা দেওয়া:</h4>
+            <p>
+              হাসপাতালের সামনে অ্যাম্বুলেন্স থামতেই অনেক দালাল "কম খরচে ভালো ব্যবস্থা করে দিচ্ছি" বলে নিম্নমানের ক্লিনিকে নিয়ে যায়। সবসময় পূর্বনির্ধারিত ভেরিফায়েড হাসপাতালে সরাসরি প্রবেশ করুন।
+            </p>
+
+            <!-- Action Banner -->
+            <div class="bg-emerald-50 p-4 rounded-xl border border-emerald-200 mt-3 flex flex-col sm:flex-row items-center justify-between gap-3">
+              <div>
+                <div class="font-black text-emerald-800 text-xs sm:text-sm">অ্যাম্বুলেন্সে ঢাকায় আসছেন? ধানমন্ডিতে বেড প্রস্তুত রাখুন</div>
+                <div class="text-[11px] sm:text-xs text-slate-600">রোগী পৌঁছানোর আগেই আইসিইউ ও মেডিকেল টিমকে প্রস্তুত রাখার নিশ্চয়তা।</div>
+              </div>
+              <a href="https://wa.me/8801716788301?text=Amra%20Ambulance%20e%20Dhakay%20aschhi,%20ICU%20bed%20lagbe" target="_blank" class="shrink-0 bg-[#25D366] text-white px-4 py-2 rounded-lg font-black text-xs hover:bg-emerald-600 transition">
+                হোয়াটসঅ্যাপে যোগাযোগ
+              </a>
+            </div>
+          </div>
+        </details>
+      </article>
+
+      <!-- ARTICLE 3: NICU & Incubator Guide -->
+      <article class="article-card clean-card rounded-2xl p-5 sm:p-7 border border-[#EAE5DC]" data-category="nicu" data-search="এনআইসিইউ nicu ইনকিউবেটর incubator নবজাতক শিশু baby প্রি-ম্যাচিউর জন্ডিস">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-lg bg-pink-100 text-pink-700 font-bold text-xs">শিশু ও এনআইসিইউ</span>
+            <span class="text-slate-400 text-xs">•</span>
+            <span class="text-slate-500 text-xs font-semibold">৪ মিনিট পাঠ</span>
+          </div>
+          <span class="text-xs font-bold text-slate-400">আপডেট: অক্টোবর ২০২৬</span>
+        </div>
+
+        <h3 class="text-lg sm:text-xl font-black text-[#0D3268] mb-3 leading-snug">
+          নবজাতকের এনআইসিইউ (NICU) ও ইনকিউবেটর প্রয়োজন হলে কীভাবে দ্রুত ধানমন্ডিতে বেড নিশ্চিত করবেন
+        </h3>
+
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          সময়ের আগে জন্ম নেওয়া প্রিম্যাচিউর শিশু, জন্মের পর না কাঁদা, তীব্র জন্ডিস বা শ্বাসকষ্টের সমস্যায় নবজাতকের জন্য নিওনেটাল ইনটেনসিভ কেয়ার ইউনিট (এনআইসিইউ) অপরিহার্য। শিশুর দ্রুত সুস্থতায় উন্নত প্রযুক্তির ইনকিউবেটর ও সার্বক্ষণিক শিশুরোগ বিশেষজ্ঞ প্রয়োজন।
+        </p>
+
+        <details class="group">
+          <summary class="cursor-pointer inline-flex items-center gap-1.5 text-xs sm:text-sm font-black text-[#D9222A] hover:text-red-800 transition">
+            <span class="group-open:hidden">সম্পূর্ণ তথ্য ও লক্ষণগুলো পড়ুন ↓</span>
+            <span class="hidden group-open:inline">সংক্ষেপ করুন ↑</span>
+          </summary>
+          
+          <div class="mt-4 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-700 space-y-3 leading-relaxed">
+            <h4 class="font-bold text-[#0D3268] text-sm">কখন এনআইসিইউ জরুরি হয়ে পড়ে?</h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>শিশুর ওজন ১.৫ কেজির কম হলে বা ৩৭ সপ্তাহের পূর্বে প্রসব হলে।</li>
+              <li>জন্মের পর শিশুর গায়ের রঙ নীল হয়ে যাওয়া বা শ্বাস নিতে বুক দেবে যাওয়া।</li>
+              <li>তীব্র ইনফেকশন বা খিঁচুনি দেখা দিলে।</li>
+              <li>রক্তে বিলিরুবিনের মাত্রা আশঙ্কাজনকভাবে বেড়ে গিয়ে ফটোথেরাপির প্রয়োজন হলে।</li>
+            </ul>
+            <h4 class="font-bold text-[#0D3268] text-sm">ধানমন্ডি হাবের সুবিধা:</h4>
+            <p>
+              ধানমন্ডির বিশেষায়িত শিশু হাসপাতাল নেটওয়ার্কে সারফ্যাকট্যান্ট থেরাপি, হাই-ফ্রিকোয়েন্সি ভেন্টিলেটর এবং উষ্ণ তাপমাত্রা নিয়ন্ত্রিত জাপানিজ ইনকিউবেটর প্রস্তুত রয়েছে। শিশুরোগ কনসালট্যান্টদের সার্বক্ষণিক তত্ত্বাবধান নিশ্চিত করা হয়।
+            </p>
+          </div>
+        </details>
+      </article>
+
+      <!-- ARTICLE 4: Heart Attack & CCU -->
+      <article class="article-card clean-card rounded-2xl p-5 sm:p-7 border border-[#EAE5DC]" data-category="ccu" data-search="সিসিইউ ccu হার্ট heart কার্ডিয়াক cardiac অ্যাটাক attack এনজিওগ্রাম গোল্ডেন আওয়ার">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-lg bg-amber-100 text-amber-800 font-bold text-xs">হৃদরোগ ও সিসিইউ</span>
+            <span class="text-slate-400 text-xs">•</span>
+            <span class="text-slate-500 text-xs font-semibold">৪ মিনিট পাঠ</span>
+          </div>
+          <span class="text-xs font-bold text-slate-400">আপডেট: অক্টোবর ২০২৬</span>
+        </div>
+
+        <h3 class="text-lg sm:text-xl font-black text-[#0D3268] mb-3 leading-snug">
+          ম্যাসিভ হার্ট অ্যাটাকের লক্ষণ ও প্রথম গোল্ডেন আওয়ারে সিসিইউ (CCU) চিকিৎসা
+        </h3>
+
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          হৃদরোগে আক্রান্ত হওয়ার প্রথম ৬০ থেকে ৯০ মিনিটকে মেডিকেল সায়েন্সে "গোল্ডেন আওয়ার" বলা হয়। এই সময়ের মধ্যে করোনারি কেয়ার ইউনিটে (সিসিইউ) নিয়ে রক্তনালীর ব্লকেজ খুলে দেওয়া গেলে রোগীর হৃদযন্ত্র স্থায়ী ক্ষতির হাত থেকে রক্ষা পায়।
+        </p>
+
+        <details class="group">
+          <summary class="cursor-pointer inline-flex items-center gap-1.5 text-xs sm:text-sm font-black text-[#D9222A] hover:text-red-800 transition">
+            <span class="group-open:hidden">জরুরি লক্ষণ ও করণীয় বিস্তারিত পড়ুন ↓</span>
+            <span class="hidden group-open:inline">সংক্ষেপ করুন ↑</span>
+          </summary>
+          
+          <div class="mt-4 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-700 space-y-3 leading-relaxed">
+            <h4 class="font-bold text-[#0D3268] text-sm">হার্ট অ্যাটাকের ক্লাসিক লক্ষণসমূহ:</h4>
+            <ul class="list-disc pl-5 space-y-1">
+              <li>বুকের মাঝখানে তীব্র চাপ, মোচড় বা ভারী পাথর চেপে বসার মতো অনুভূতি।</li>
+              <li>ব্যথা বাম বাহু, গলা, চোয়াল বা পিঠের দিকে ছড়িয়ে পড়া।</li>
+              <li>অতিরিক্ত ঠান্ডা ঘাম হওয়া, মাথা ঘোরানো ও বমি বমি ভাব।</li>
+              <li>বিনা কারণে প্রচণ্ড শ্বাসকষ্ট দেখা দেওয়া।</li>
+            </ul>
+            <h4 class="font-bold text-[#0D3268] text-sm">তাৎক্ষণিক করণীয়:</h4>
+            <p>
+              গ্যাস বা অ্যাসিডিটির ওষুধ খেয়ে সময় নষ্ট করবেন না। রোগীকে শান্তভাবে বসিয়ে রেখে অবিলম্বে ইসিজি করার ব্যবস্থা করুন এবং ২৪ ঘণ্টা সচল ডিজিটাল ক্যাথল্যাবযুক্ত সিসিইউতে স্থানান্তর করুন।
+            </p>
+          </div>
+        </details>
+      </article>
+
+      <!-- ARTICLE 5: Safe Hospital Admission & Anti-Broker -->
+      <article class="article-card clean-card rounded-2xl p-5 sm:p-7 border border-[#EAE5DC]" data-category="admission" data-search="ভর্তি admission দালাল broker সাশ্রয়ী খরচ হাসপাতাল ধানমন্ডি বিলিং">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <div class="flex items-center gap-2">
+            <span class="px-2.5 py-0.5 rounded-lg bg-emerald-100 text-emerald-800 font-bold text-xs">দালালমুক্ত ভর্তি ও সাশ্রয়</span>
+            <span class="text-slate-400 text-xs">•</span>
+            <span class="text-slate-500 text-xs font-semibold">৩ মিনিট পাঠ</span>
+          </div>
+          <span class="text-xs font-bold text-slate-400">আপডেট: অক্টোবর ২০২৬</span>
+        </div>
+
+        <h3 class="text-lg sm:text-xl font-black text-[#0D3268] mb-3 leading-snug">
+          ঢাকার হাসপাতালে কোনো দালালের খপ্পরে না পড়ে সাশ্রয়ী খরচে সরাসরি রোগী ভর্তির নিয়ম
+        </h3>
+
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-4">
+          অনেক সময় রোগী নিয়ে পরিবার ঢাকায় এলে হাসপাতাল গেট ও ফুটপাতে অবস্থানরত কিছু মধ্যস্বত্বভোগী রোগী ভাগিয়ে নেয়। এতে রোগীর চিকিৎসার মান খারাপ হয় এবং অস্বাভাবিক অতিরিক্ত বিলের বোঝা চেপে বসে।
+        </p>
+
+        <details class="group">
+          <summary class="cursor-pointer inline-flex items-center gap-1.5 text-xs sm:text-sm font-black text-[#D9222A] hover:text-red-800 transition">
+            <span class="group-open:hidden">দালালমুক্ত ভর্তির বিস্তারিত নিয়ম পড়ুন ↓</span>
+            <span class="hidden group-open:inline">সংক্ষেপ করুন ↑</span>
+          </summary>
+          
+          <div class="mt-4 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-700 space-y-3 leading-relaxed">
+            <h4 class="font-bold text-[#0D3268] text-sm">১. কোনো অপরিচিত ব্যক্তির কথায় গাড়ি ঘুরাবেন না:</h4>
+            <p>
+              সিএনজি চালক, কিছু অসৎ অ্যাম্বুলেন্স চালক বা গেটে দাঁড়িয়ে থাকা ব্যক্তিরা কমিশন পাওয়ার লোভে রোগীর পরিবারকে ভুল তথ্য দিয়ে নির্দিষ্ট ক্লিনিকে নিয়ে যেতে চায়। কারো কোনো আশ্বাসে কান দেবেন না।
+            </p>
+            <h4 class="font-bold text-[#0D3268] text-sm">২. সরাসরি রেজিস্টার্ড হেলথকেয়ার নেটওয়ার্কের মাধ্যমে আসুন:</h4>
+            <p>
+              আমরা ধানমন্ডির এ-ক্যাটাগরির মানসম্মত হাসপাতালের সাথে সরাসরি কর্পোরেট চুক্তিবদ্ধ। আমাদের মাধ্যমে ভর্তি হলে কোনো দালাল বা মধ্যস্বত্বভোগীর অতিরিক্ত ফি থাকে না এবং অনুমোদিত কর্পোরেট প্যাকেজে প্রতিদিনের বেড ভাড়ায় বিশেষ সাশ্রয় নিশ্চিত করা যায়।
+            </p>
+            <h4 class="font-bold text-[#0D3268] text-sm">৩. পরিষ্কার বিলিং বিবরণী বুঝে নিন:</h4>
+            <p>
+              ভর্তির সময়েই বেড ভাড়া, নার্সিং চার্জ এবং ইনভেস্টিগেশনের নিয়মাবলী জেনে নিন। কোনো প্রকার লুকানো বা অতিরিক্ত খরচ ছাড়া স্বচ্ছ চিকিৎসা সেবা গ্রহণ করুন।
+            </p>
+          </div>
+        </details>
+      </article>
+
+    </div>
+
+    <!-- NO SEARCH MATCH STATE -->
+    <div id="no-match" class="hidden text-center py-12 bg-white rounded-2xl border border-slate-200 mt-6 p-6">
+      <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center mx-auto text-slate-400 mb-3">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+      </div>
+      <h3 class="text-base font-bold text-slate-700 mb-1">কোনো আর্টিকেল পাওয়া যায়নি</h3>
+      <p class="text-xs text-slate-500 mb-4">আপনার খোঁজার শব্দটি পরিবর্তন করে আবার চেষ্টা করুন অথবা সরাসরি আমাদের হটলাইনে ফোন দিন।</p>
+      <button onclick="document.getElementById('article-search').value=''; setCategory('all', document.querySelector('.cat-btn'));" class="px-4 py-2 bg-[#0D3268] text-white rounded-xl text-xs font-bold hover:bg-slate-800 transition">
+        সব আর্টিকেল দেখুন
+      </button>
+    </div>
+
+    <!-- BOTTOM EMERGENCY BANNER -->
+    <section class="mt-12 bg-gradient-to-r from-[#D9222A] to-red-700 text-white p-6 sm:p-8 rounded-2xl shadow-xl flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="space-y-1.5 text-center md:text-left">
+        <h3 class="text-xl sm:text-2xl font-black">রোগীর তাৎক্ষণিক আইসিইউ বা সিসিইউ বেড প্রয়োজন?</h3>
+        <p class="text-xs sm:text-sm text-red-100 font-medium">ধানমন্ডির স্বনামধন্য হাসপাতালে রোগী পৌঁছানোর আগেই বেড প্রস্তুত করে রাখা হবে।</p>
+      </div>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <a href="tel:01716788301" class="inline-flex items-center gap-2 bg-white text-[#D9222A] hover:bg-slate-100 px-5 py-3 rounded-xl font-black text-sm shadow-md transition">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          <span>সরাসরি কল: 01716788301</span>
+        </a>
+        <a href="https://wa.me/8801716788301" target="_blank" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-emerald-600 text-white px-5 py-3 rounded-xl font-black text-sm shadow-md transition">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.35.06-.53.25-.19.19-.71.69-.71 1.69 0 1 .73 1.96.83 2.1.1.13 1.41 2.22 3.48 3.07.49.21.88.33 1.18.43.5.15.95.13 1.31.08.4-.06 1.23-.5 1.4-.99.18-.49.18-.91.13-.99-.06-.09-.2-.14-.42-.25-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.5.11-.15.22-.58.71-.71.86-.13.15-.26.17-.48.06-.22-.11-.93-.34-1.77-1.09-.65-.58-1.09-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.36.07-.15.04-.28-.02-.39-.06-.11-.5-.1.21-.69-1.65z"/></svg>
+          <span>হোয়াটসঅ্যাপে চ্যাট করুন</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0B1528] text-white py-10 px-4 sm:px-6 border-t border-slate-800 mt-12 text-center text-xs">
+    <div class="max-w-4xl mx-auto space-y-4">
+      <div class="text-base font-black text-white">Emergency <span class="text-[#D9222A]">Care</span> BD</div>
+      <p class="text-slate-400 max-w-xl mx-auto leading-relaxed">
+        ধানমন্ডির স্বনামধন্য ও শীর্ষ সারির প্রাইভেট হাসপাতালগুলোর সাথে অংশীদারিত্বে জরুরি ক্রিটিক্যাল কেয়ার, লাইভ আইসিইউ বেড ও বিশেষজ্ঞ ডক্টর রেফারেল নেটওয়ার্ক।
+      </p>
+      <div class="text-slate-300 font-bold pt-1">
+        ২৪ ঘণ্টা জরুরি হটলাইন: <a href="tel:01716788301" class="text-white underline font-black">01716788301</a> | অবস্থান: ধানমন্ডি এলাকা, ঢাকা
+      </div>
+      <div class="pt-4 border-t border-slate-800 text-slate-500 text-[11px]">
+        &copy; 2026 Emergency Care BD. সর্বস্বত্ব সংরক্ষিত।
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE STICKY BOTTOM BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-[#EAE5DC] p-2.5 md:hidden flex gap-2 shadow-2xl">
+    <a href="tel:01716788301" class="flex-1 py-3 px-3 rounded-xl bg-[#D9222A] text-white font-black text-xs flex items-center justify-center gap-1.5 shadow-md">
+      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+      <span>জরুরি কল: 01716-788301</span>
+    </a>
+    <a href="https://wa.me/8801716788301?text=Ami%20Emergency%20Care%20er%20shastho%20article%20dekhe%20jogajog%20korchi" target="_blank" class="flex-1 py-3 px-3 rounded-xl bg-[#25D366] text-white font-black text-xs flex items-center justify-center gap-1.5 shadow-md">
+      <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 012.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 01-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24M8.53 7.33c-.16 0-.35.06-.53.25-.19.19-.71.69-.71 1.69 0 1 .73 1.96.83 2.1.1.13 1.41 2.22 3.48 3.07.49.21.88.33 1.18.43.5.15.95.13 1.31.08.4-.06 1.23-.5 1.4-.99.18-.49.18-.91.13-.99-.06-.09-.2-.14-.42-.25-.22-.11-1.3-.64-1.5-.71-.2-.07-.35-.11-.5.11-.15.22-.58.71-.71.86-.13.15-.26.17-.48.06-.22-.11-.93-.34-1.77-1.09-.65-.58-1.09-1.3-1.22-1.52-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.36.07-.15.04-.28-.02-.39-.06-.11-.5-.1.21-.69-1.65z"/></svg>
+      <span>হোয়াটসঅ্যাপে পরামর্শ</span>
+    </a>
+  </div>
+
+  <script>
+    var currentCategory = 'all';
+
+    function setCategory(cat, btn) {
+      currentCategory = cat;
+      document.querySelectorAll('.cat-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      btn.classList.add('active');
+      filterArticles();
+    }
+
+    function filterArticles() {
+      var query = document.getElementById('article-search').value.toLowerCase().trim();
+      var articles = document.querySelectorAll('.article-card');
+      var matchedCount = 0;
+
+      articles.forEach(function(article) {
+        var cardCat = article.getAttribute('data-category');
+        var cardSearch = article.getAttribute('data-search').toLowerCase();
+
+        var matchesCategory = (currentCategory === 'all' || cardCat === currentCategory);
+        var matchesQuery = (query === '' || cardSearch.indexOf(query) !== -1 || article.innerText.toLowerCase().indexOf(query) !== -1);
+
+        if (matchesCategory && matchesQuery) {
+          article.style.display = 'block';
+          matchedCount++;
+        } else {
+          article.style.display = 'none';
+        }
+      });
+
+      var noMatchEl = document.getElementById('no-match');
+      if (matchedCount === 0) {
+        noMatchEl.classList.remove('hidden');
+      } else {
+        noMatchEl.classList.add('hidden');
+      }
+    }
+  </script>
+
+</body>
+</html>

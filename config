@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[user]
+	name = itsrakibsignature-arch
+	email = itsrakibsignature@gmail.com
+[remote "origin"]
+	url = https://github.com/itsrakibsignature-arch/emergency-care-bd.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
