@@ -1,0 +1,198 @@
+/* ==========================================================================
+   Emergency Care BD - Custom Styles & Animations
+   Brand Colors:
+   - Royal Blue: #0A3D91
+   - Emergency Red: #E02424
+   - Soft Ice Blue: #F4F7FC
+   - Clean White: #FFFFFF
+   ========================================================================== */
+
+:root {
+  --brand-blue: #0A3D91;
+  --brand-blue-dark: #072B69;
+  --brand-red: #E02424;
+  --brand-red-dark: #B91C1C;
+  --brand-ice: #F4F7FC;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Hind Siliguri', 'Noto Sans Bengali', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--brand-ice);
+  color: #0F172A;
+  overflow-x: hidden;
+  /* Extra bottom padding on mobile so sticky bottom bar doesn't cover footer content */
+  padding-bottom: 76px;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 0;
+  }
+}
+
+/* Custom Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(0.5deg);
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(224, 36, 36, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 12px rgba(224, 36, 36, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(224, 36, 36, 0);
+  }
+}
+
+@keyframes pulseRingWhite {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes pulseGreen {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentle 6s ease-in-out 1.5s infinite;
+}
+
+.pulse-red-btn {
+  animation: pulseRing 2s infinite;
+}
+
+.pulse-white-btn {
+  animation: pulseRingWhite 2s infinite;
+}
+
+.live-dot {
+  animation: pulseGreen 2s infinite;
+}
+
+/* Partner Hospital Carousel */
+.hospital-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 32s linear infinite;
+}
+
+.hospital-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Grayscale to Color Hospital Cards */
+.hospital-partner-card {
+  filter: grayscale(100%);
+  opacity: 0.72;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hospital-partner-card:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: translateY(-3px);
+}
+
+/* Custom Scrollbar for Filter Pills on Mobile */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Glassmorphism & Card Polish */
+.glass-badge {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.hero-pattern {
+  background-color: #F4F7FC;
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(10, 61, 145, 0.08) 0px, transparent 50%),
+    radial-gradient(at 85% 20%, rgba(224, 36, 36, 0.07) 0px, transparent 50%),
+    radial-gradient(at 50% 85%, rgba(10, 61, 145, 0.05) 0px, transparent 50%);
+}
+
+/* Service Card Hover Transitions */
+.service-card {
+  transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(10, 61, 145, 0.12), 0 8px 16px -6px rgba(10, 61, 145, 0.06);
+}
+
+/* Doctor Card Hover */
+.doctor-card {
+  transition: all 0.25s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 28px -8px rgba(10, 61, 145, 0.12);
+  border-color: rgba(10, 61, 145, 0.25);
+}
+
+/* Modal Backdrop Transition */
+.modal-backdrop {
+  background-color: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+}

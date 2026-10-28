@@ -47,43 +47,73 @@
 </head>
 <body class="bg-[#FAF8F5] text-slate-800 antialiased selection:bg-red-500 selection:text-white">
 
-  <!-- NAVBAR -->
-  <nav class="bg-white border-b border-[#EAE5DC] py-3 px-4 sm:px-6 shadow-xs sticky top-0 z-40 backdrop-blur-md bg-white/95">
+  <!-- NAVBAR (3-Dot Left, Centered Logo, Short Call Now Right) -->
+  <nav class="bg-white border-b border-[#EAE5DC] py-2.5 px-3 sm:px-6 shadow-xs sticky top-0 z-40 backdrop-blur-md bg-white/95">
     <div class="max-w-6xl mx-auto flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2.5 sm:gap-3">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-full border border-slate-200 bg-white overflow-hidden shadow-xs shrink-0 flex items-center justify-center">
+      
+      <!-- Top Left: 3-Dot Menu Button -->
+      <button onclick="toggleMenu()" aria-label="Menu" class="w-10 h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 flex flex-col items-center justify-center gap-1 transition focus:outline-none shrink-0">
+        <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
+        <span class="w-1.5 h-1.5 rounded-full bg-slate-800"></span>
+      </button>
+
+      <!-- Middle: Logo Centered -->
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full border border-slate-200 bg-white overflow-hidden shadow-2xs shrink-0 flex items-center justify-center">
           <img src="logo.png" alt="Emergency Care BD" class="w-full h-full object-contain p-0.5" />
         </div>
-        <div>
-          <div class="text-lg sm:text-xl font-black text-[#0D3268] tracking-tight leading-none">
-            Emergency <span class="text-[#D9222A]">Care</span> BD
-          </div>
-          
+        <div class="text-base sm:text-xl font-black text-[#0D3268] tracking-tight leading-none text-center">
+          Emergency <span class="text-[#D9222A]">Care</span> BD
         </div>
       </a>
 
-      <!-- Center Nav Links -->
-      <div class="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
-        <a href="index.html" class="hover:text-[#D9222A] transition">হোম (জরুরি বেড)</a>
-        <a href="doctors.html" class="hover:text-[#D9222A] transition">ডাক্তার তালিকা</a>
-        <a href="articles.html" class="text-[#D9222A] font-black border-b-2 border-[#D9222A] pb-0.5">স্বাস্থ্য সহায়িকা</a>
-      </div>
-      
-      <!-- Call Button -->
-      <a href="tel:01716788301" class="inline-flex items-center gap-1.5 sm:gap-2 bg-[#D9222A] hover:bg-red-700 text-white font-black text-xs sm:text-sm px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl shadow-xs transition pulse-call shrink-0">
-        <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
-        <span class="hidden sm:inline">জরুরি কথা বলুন: 01716-788301</span>
-        <span class="sm:hidden">কল: 01716-788301</span>
+      <!-- Top Right: Short Call Now Button -->
+      <a href="tel:01716788301" class="inline-flex items-center gap-1.5 bg-[#D9222A] hover:bg-red-700 text-white font-black text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-xl shadow-xs transition pulse-call shrink-0">
+        <svg class="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        <span>Call Now</span>
       </a>
+
     </div>
   </nav>
 
-  <!-- MOBILE SUB-NAVIGATION BAR -->
-  <div class="md:hidden bg-slate-50 border-b border-[#EAE5DC] px-4 py-2 flex items-center justify-around text-xs font-bold text-slate-600">
-    <a href="index.html" class="py-1">হোম (জরুরি বেড)</a>
-    <a href="doctors.html" class="py-1">ডাক্তার তালিকা</a>
-    <a href="articles.html" class="py-1 text-[#D9222A] font-black border-b-2 border-[#D9222A]">স্বাস্থ্য সহায়িকা</a>
+  <!-- NAVIGATION DRAWER -->
+  <div id="mobile-drawer" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs hidden transition-opacity" onclick="if(event.target === this) toggleMenu()">
+    <div class="fixed top-0 left-0 bottom-0 w-72 max-w-[80vw] bg-white shadow-2xl p-5 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between pb-4 border-b border-slate-100 mb-4">
+          <div class="flex items-center gap-2">
+            <img src="logo.png" alt="Logo" class="w-8 h-8 rounded-full border border-slate-200" />
+            <div class="text-sm font-black text-[#0D3268]">Emergency <span class="text-[#D9222A]">Care</span> BD</div>
+          </div>
+          <button onclick="toggleMenu()" class="w-8 h-8 rounded-lg bg-slate-100 flex items-center justify-center text-slate-500 font-bold hover:bg-slate-200">✕</button>
+        </div>
+
+        <nav class="space-y-2 text-sm font-bold text-slate-700">
+          <a href="index.html" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition">
+            <span>🏠</span> <span>হোম (জরুরি বেড)</span>
+          </a>
+          <a href="doctors.html" class="flex items-center gap-3 p-2.5 rounded-xl hover:bg-slate-50 transition">
+            <span>👨‍⚕️</span> <span>ধানমন্ডির ডাক্তার তালিকা</span>
+          </a>
+          <a href="articles.html" class="flex items-center gap-3 p-2.5 rounded-xl bg-red-50 text-[#D9222A]">
+            <span>📖</span> <span>জরুরি স্বাস্থ্য সহায়িকা</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="space-y-2 pt-4 border-t border-slate-100">
+        <a href="tel:01716788301" class="w-full py-2.5 px-3 rounded-xl bg-[#D9222A] text-white text-xs font-black flex items-center justify-center gap-2 shadow-xs">
+          📞 জরুরি কল: 01716788301
+        </a>
+        <a href="https://wa.me/8801716788301" target="_blank" class="w-full py-2.5 px-3 rounded-xl bg-[#25D366] text-white text-xs font-black flex items-center justify-center gap-2 shadow-xs">
+          💬 হোয়াটসঅ্যাপে চ্যাট
+        </a>
+      </div>
+    </div>
   </div>
+
+  
 
   <!-- HERO SECTION -->
   <section class="py-8 sm:py-12 px-4 sm:px-6 bg-gradient-to-b from-white to-[#FAF8F5] border-b border-[#EAE5DC]">
@@ -514,5 +544,16 @@
 
   <!-- Vercel Web Analytics -->
   <script defer src="/_vercel/insights/script.js"></script>
+
+  <script>
+    function toggleMenu() {
+      var d = document.getElementById('mobile-drawer');
+      if (d.classList.contains('hidden')) {
+        d.classList.remove('hidden');
+      } else {
+        d.classList.add('hidden');
+      }
+    }
+  </script>
 </body>
 </html>
