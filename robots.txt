@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /emergency-care-bd.zip
+Disallow: /*.backup.html
+
+# Explicitly allow major LLM search crawlers for GEO
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://emergency-care-bd.vercel.app/sitemap.xml
