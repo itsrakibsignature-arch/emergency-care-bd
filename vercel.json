@@ -1,6 +1,21 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/doctors",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/doctors.html",
+      "destination": "/",
+      "permanent": false
+    }
+  ],
   "rewrites": [
-    { "source": "/", "destination": "/index.html" }
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
   ]
 }
