@@ -323,118 +323,189 @@
     </div>
   </section>
 
-  <!-- 3.5 VERIFIED PARTNER HOSPITALS (Reliance General & Renal, New Life, Olympus) -->
-  <section class="py-8 px-4 sm:px-6 bg-white border-b border-[#EAE5DC]">
-    <div class="max-w-6xl mx-auto">
+  <!-- 3.5 VERIFIED PARTNER HOSPITALS SCROLLING MARQUEE -->
+  <section class="py-10 px-4 sm:px-6 bg-[#081426] text-white border-y border-white/10 relative overflow-hidden" style="background: radial-gradient(circle at 50% 50%, #0E2442 0%, #071220 100%);">
+    
+    <style>
+      @keyframes partnerScroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .partner-marquee-track {
+        display: flex;
+        width: max-content;
+        animation: partnerScroll 28s linear infinite;
+      }
+      .partner-marquee-track:hover {
+        animation-play-state: paused;
+      }
+    </style>
+
+    <div class="max-w-6xl mx-auto relative z-10">
       
-      <!-- Micro-header & Live Trust Eyebrow -->
-      <div class="text-center max-w-2xl mx-auto mb-6">
-        <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-800 text-xs font-black px-3 py-1 rounded-full border border-emerald-200 mb-2">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>ভেরিফায়েড পার্টনার হাসপাতাল নেটওয়ার্ক</span>
-        </div>
-        <h3 class="text-xl sm:text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
-          ধানমন্ডির যেসব হাসপাতালে আপনার রোগীর বেড প্রস্তুত থাকবে
-        </h3>
-        <p class="text-xs sm:text-sm text-slate-500 font-medium mt-1">
-          কোনো দালাল বা থার্ড-পার্টি নয় - আমাদের নিজস্ব কো-অর্ডিনেটর সরাসরি হাসপাতালে থেকে বেড নিশ্চিত করবেন
-        </p>
-      </div>
-
-      <!-- 3 Hospital Trust Badges (Grid on Desktop, Clean Stack on Mobile) -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        
-        <!-- Hospital 1: Reliance General & Renal Hospital Limited -->
-        <div class="clean-card rounded-2xl p-4 sm:p-5 border border-slate-200 bg-white shadow-xs hover:border-emerald-300 transition flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2.5">
-              <span class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-[11px] font-bold px-2 py-0.5 rounded-md">
-                📍 ধানমন্ডি, ঢাকা
-              </span>
-              <span class="text-emerald-700 font-extrabold text-[11px] flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-                ✓ ভেরিফায়েড
-              </span>
-            </div>
-            <h4 class="font-black text-slate-900 text-base sm:text-lg leading-snug mb-1.5">
-              Reliance General & Renal Hospital Limited
-            </h4>
-            <p class="text-xs text-slate-600 font-medium leading-relaxed">
-              কিডনি জটিলতা, ডায়ালিসিস, ভেন্টিলেটর ও সার্বক্ষণিক আইসিইউ-সিসিইউ ক্রিটিক্যাল সাপোর্ট সুবিধা।
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px]">
-            <span class="text-slate-500 font-semibold">লাইফ-সাপোর্ট বেড:</span>
-            <span class="text-emerald-700 font-black flex items-center gap-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-              অ্যাডমিশন ওপেন
-            </span>
-          </div>
-        </div>
-
-        <!-- Hospital 2: New Life Hospital Pvt. Ltd. -->
-        <div class="clean-card rounded-2xl p-4 sm:p-5 border border-slate-200 bg-white shadow-xs hover:border-emerald-300 transition flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2.5">
-              <span class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-[11px] font-bold px-2 py-0.5 rounded-md">
-                📍 ধানমন্ডি, ঢাকা
-              </span>
-              <span class="text-emerald-700 font-extrabold text-[11px] flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-                ✓ ভেরিফায়েড
-              </span>
-            </div>
-            <h4 class="font-black text-slate-900 text-base sm:text-lg leading-snug mb-1.5">
-              New Life Hospital Pvt. Ltd.
-            </h4>
-            <p class="text-xs text-slate-600 font-medium leading-relaxed">
-              মাল্টি-ডিসিপ্লিনারি ইনটেনসিভ কেয়ার, অ্যাডভান্সড এনআইসিইউ/পিআইসিইউ ও দ্রুত ইমার্জেন্সি রেসপন্স।
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px]">
-            <span class="text-slate-500 font-semibold">লাইফ-সাপোর্ট বেড:</span>
-            <span class="text-emerald-700 font-black flex items-center gap-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-              অ্যাডমিশন ওপেন
-            </span>
-          </div>
-        </div>
-
-        <!-- Hospital 3: Olympus Hospital Pvt. Ltd. -->
-        <div class="clean-card rounded-2xl p-4 sm:p-5 border border-slate-200 bg-white shadow-xs hover:border-emerald-300 transition flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between mb-2.5">
-              <span class="inline-flex items-center gap-1 bg-slate-100 text-slate-700 text-[11px] font-bold px-2 py-0.5 rounded-md">
-                📍 ধানমন্ডি, ঢাকা
-              </span>
-              <span class="text-emerald-700 font-extrabold text-[11px] flex items-center gap-1 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200">
-                ✓ ভেরিফায়েড
-              </span>
-            </div>
-            <h4 class="font-black text-slate-900 text-base sm:text-lg leading-snug mb-1.5">
-              Olympus Hospital Pvt. Ltd.
-            </h4>
-            <p class="text-xs text-slate-600 font-medium leading-relaxed">
-              মডার্ন আইসিইউ, সিসিইউ, ডায়াগনস্টিক সাপোর্ট ও বিশেষজ্ঞ চিকিৎসকদের সার্বক্ষণিক অন-কল টিম।
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-[11px]">
-            <span class="text-slate-500 font-semibold">লাইফ-সাপোর্ট বেড:</span>
-            <span class="text-emerald-700 font-black flex items-center gap-1">
-              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
-              অ্যাডমিশন ওপেন
-            </span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Trust Subtext / Friction-free Guarantee -->
-      <div class="mt-5 text-center">
-        <p class="text-xs sm:text-sm font-semibold text-slate-600 bg-[#FAF8F5] border border-[#EAE5DC] py-2.5 px-4 rounded-xl inline-block">
-          🛡️ রোগী অ্যাম্বুলেন্সে রওনা দেওয়ার সাথে সাথেই যোগাযোগ করুন  -  হাসপাতালে পৌঁছানোর আগেই এই হাসপাতালগুলোতে লাইফ-সাপোর্ট বেড রেডি রাখা হবে।
-        </p>
+      <!-- Micro-header: "• আমাদের ভেরিফায়েড পার্টনার হাসপাতাল •" -->
+      <div class="flex items-center justify-center gap-3 mb-6">
+        <span class="w-8 sm:w-20 h-px bg-white/20"></span>
+        <span class="inline-flex items-center gap-2 text-xs sm:text-sm font-black tracking-widest uppercase text-amber-300">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+          আমাদের ভেরিফায়েড পার্টনার হাসপাতাল
+        </span>
+        <span class="w-8 sm:w-20 h-px bg-white/20"></span>
       </div>
 
     </div>
+
+    <!-- Scrolling Marquee Slider with Fade Edges -->
+    <div class="relative w-full overflow-hidden py-2">
+      
+      <!-- Left & Right Gradient Shadows for Smooth Fade -->
+      <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-12 sm:w-32 bg-gradient-to-r from-[#071220] to-transparent z-10"></div>
+      <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-12 sm:w-32 bg-gradient-to-l from-[#071220] to-transparent z-10"></div>
+
+      <!-- Marquee Track (Repeated 2 full identical blocks for seamless 50% translation) -->
+      <div class="partner-marquee-track flex items-center gap-4 select-none">
+        
+        <!-- BLOCK 1 -->
+        <div class="flex items-center gap-4 shrink-0">
+          
+          <!-- 1. Olympus Hospital -->
+          <div class="flex items-center gap-3.5 bg-white/[0.07] hover:bg-white/[0.12] border border-white/15 hover:border-emerald-400/50 backdrop-blur-md px-5 py-3.5 rounded-2xl shrink-0 transition duration-300 shadow-lg min-w-[290px] sm:min-w-[340px]">
+            <div class="w-12 h-12 rounded-xl bg-white p-1.5 flex items-center justify-center shrink-0 shadow-xs border border-white/20">
+              <img src="olympus-logo.png" alt="Olympus Hospital Pvt. Ltd." class="w-full h-full object-contain" />
+            </div>
+            <div class="text-left">
+              <div class="flex items-center gap-2 mb-0.5">
+                <span class="text-white font-black text-sm sm:text-base tracking-tight leading-snug">
+                  Olympus Hospital Pvt. Ltd.
+                </span>
+                <span class="text-emerald-400 text-xs font-bold shrink-0">✓</span>
+              </div>
+              <div class="text-[11px] text-slate-300 font-medium flex items-center gap-1.5">
+                <span>📍 ধানমন্ডি</span>
+                <span>•</span>
+                <span class="text-emerald-300 font-semibold">মডার্ন আইসিইউ ও সিসিইউ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. New Life Hospital -->
+          <div class="flex items-center gap-3.5 bg-white/[0.07] hover:bg-white/[0.12] border border-white/15 hover:border-emerald-400/50 backdrop-blur-md px-5 py-3.5 rounded-2xl shrink-0 transition duration-300 shadow-lg min-w-[290px] sm:min-w-[340px]">
+            <div class="w-12 h-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow-xs border border-white/20">
+              <img src="new-life-logo.png" alt="New Life Hospital Pvt. Ltd." class="w-full h-full object-contain" />
+            </div>
+            <div class="text-left">
+              <div class="flex items-center gap-2 mb-0.5">
+                <span class="text-white font-black text-sm sm:text-base tracking-tight leading-snug">
+                  New Life Hospital Pvt. Ltd.
+                </span>
+                <span class="text-emerald-400 text-xs font-bold shrink-0">✓</span>
+              </div>
+              <div class="text-[11px] text-slate-300 font-medium flex items-center gap-1.5">
+                <span>📍 ধানমন্ডি</span>
+                <span>•</span>
+                <span class="text-emerald-300 font-semibold">মাল্টি-ডিসিপ্লিনারি আইসিইউ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Reliance General & Renal Hospital -->
+          <div class="flex items-center gap-3.5 bg-white/[0.07] hover:bg-white/[0.12] border border-white/15 hover:border-emerald-400/50 backdrop-blur-md px-5 py-3.5 rounded-2xl shrink-0 transition duration-300 shadow-lg min-w-[290px] sm:min-w-[340px]">
+            <div class="w-12 h-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow-xs border border-white/20">
+              <img src="reliance-logo.png" alt="Reliance General & Renal Hospital Limited" class="w-full h-full object-contain" />
+            </div>
+            <div class="text-left">
+              <div class="flex items-center gap-2 mb-0.5">
+                <span class="text-white font-black text-sm sm:text-base tracking-tight leading-snug">
+                  Reliance General & Renal Hospital
+                </span>
+                <span class="text-emerald-400 text-xs font-bold shrink-0">✓</span>
+              </div>
+              <div class="text-[11px] text-slate-300 font-medium flex items-center gap-1.5">
+                <span>📍 ধানমন্ডি</span>
+                <span>•</span>
+                <span class="text-emerald-300 font-semibold">কিডনি ও ক্রিটিক্যাল আইসিইউ</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BLOCK 2 (Exact Duplicate for Seamless Infinite Loop) -->
+        <div class="flex items-center gap-4 shrink-0" aria-hidden="true">
+          
+          <!-- 1. Olympus Hospital -->
+          <div class="flex items-center gap-3.5 bg-white/[0.07] hover:bg-white/[0.12] border border-white/15 hover:border-emerald-400/50 backdrop-blur-md px-5 py-3.5 rounded-2xl shrink-0 transition duration-300 shadow-lg min-w-[290px] sm:min-w-[340px]">
+            <div class="w-12 h-12 rounded-xl bg-white p-1.5 flex items-center justify-center shrink-0 shadow-xs border border-white/20">
+              <img src="olympus-logo.png" alt="Olympus Hospital Pvt. Ltd." class="w-full h-full object-contain" />
+            </div>
+            <div class="text-left">
+              <div class="flex items-center gap-2 mb-0.5">
+                <span class="text-white font-black text-sm sm:text-base tracking-tight leading-snug">
+                  Olympus Hospital Pvt. Ltd.
+                </span>
+                <span class="text-emerald-400 text-xs font-bold shrink-0">✓</span>
+              </div>
+              <div class="text-[11px] text-slate-300 font-medium flex items-center gap-1.5">
+                <span>📍 ধানমন্ডি</span>
+                <span>•</span>
+                <span class="text-emerald-300 font-semibold">মডার্ন আইসিইউ ও সিসিইউ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. New Life Hospital -->
+          <div class="flex items-center gap-3.5 bg-white/[0.07] hover:bg-white/[0.12] border border-white/15 hover:border-emerald-400/50 backdrop-blur-md px-5 py-3.5 rounded-2xl shrink-0 transition duration-300 shadow-lg min-w-[290px] sm:min-w-[340px]">
+            <div class="w-12 h-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow-xs border border-white/20">
+              <img src="new-life-logo.png" alt="New Life Hospital Pvt. Ltd." class="w-full h-full object-contain" />
+            </div>
+            <div class="text-left">
+              <div class="flex items-center gap-2 mb-0.5">
+                <span class="text-white font-black text-sm sm:text-base tracking-tight leading-snug">
+                  New Life Hospital Pvt. Ltd.
+                </span>
+                <span class="text-emerald-400 text-xs font-bold shrink-0">✓</span>
+              </div>
+              <div class="text-[11px] text-slate-300 font-medium flex items-center gap-1.5">
+                <span>📍 ধানমন্ডি</span>
+                <span>•</span>
+                <span class="text-emerald-300 font-semibold">মাল্টি-ডিসিপ্লিনারি আইসিইউ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Reliance General & Renal Hospital -->
+          <div class="flex items-center gap-3.5 bg-white/[0.07] hover:bg-white/[0.12] border border-white/15 hover:border-emerald-400/50 backdrop-blur-md px-5 py-3.5 rounded-2xl shrink-0 transition duration-300 shadow-lg min-w-[290px] sm:min-w-[340px]">
+            <div class="w-12 h-12 rounded-xl bg-white p-1 flex items-center justify-center shrink-0 shadow-xs border border-white/20">
+              <img src="reliance-logo.png" alt="Reliance General & Renal Hospital Limited" class="w-full h-full object-contain" />
+            </div>
+            <div class="text-left">
+              <div class="flex items-center gap-2 mb-0.5">
+                <span class="text-white font-black text-sm sm:text-base tracking-tight leading-snug">
+                  Reliance General & Renal Hospital
+                </span>
+                <span class="text-emerald-400 text-xs font-bold shrink-0">✓</span>
+              </div>
+              <div class="text-[11px] text-slate-300 font-medium flex items-center gap-1.5">
+                <span>📍 ধানমন্ডি</span>
+                <span>•</span>
+                <span class="text-emerald-300 font-semibold">কিডনি ও ক্রিটিক্যাল আইসিইউ</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Trust Subtitle Caption -->
+    <div class="max-w-3xl mx-auto text-center mt-5">
+      <p class="text-xs sm:text-sm text-slate-400 font-medium italic">
+        ধানমন্ডির স্বনামধন্য এই হাসপাতালগুলোতে আমাদের টিম সরাসরি উপস্থিত থেকে রোগী পৌঁছানোর আগেই বেড প্রস্তুত রাখেন।
+      </p>
+    </div>
+
   </section>
 
   <!-- 4. NATIONWIDE 2D MAP EMERGENCY TRANSFER NETWORK (Light ICU Gray Theme) -->
