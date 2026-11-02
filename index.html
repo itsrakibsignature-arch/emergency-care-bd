@@ -5,56 +5,187 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emergency Care BD | ঢাকায় জরুরি আইসিইউ ও ভেন্টিলেটর বেড সহায়তা</title>
   <meta name="description" content="ধানমন্ডির উন্নতমানের হাসপাতালে লাইভ আইসিইউ (ICU), এনআইসিইউ (NICU), পিআইসিইউ (PICU) ও সিসিইউ (CCU) বেড বুকিং এবং ভেন্টিলেটর সাপোর্ট। কোনো অগ্রিম চার্জ নেই, রোগী ঢাকায় পৌঁছানোর আগেই বেড প্রস্তুত রাখুন।" />
-  <link rel="canonical" href="https://emergency-care-bd.vercel.app/" />
+  <link rel="canonical" href="https://www.emergencycarebd.site/" />
   <meta name="keywords" content="Emergency Care BD, ICU bed Dhaka, NICU bed booking Dhaka, CCU Dhanmondi, PICU ventilator, আইসিইউ বেড ঢাকা, এনআইসিইউ বেড ধানমন্ডি, সিসিইউ বেড বুকিং" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://emergency-care-bd.vercel.app/" />
+  <meta property="og:url" content="https://www.emergencycarebd.site/" />
   <meta property="og:title" content="Emergency Care BD | ঢাকায় জরুরি আইসিইউ ও ভেন্টিলেটর বেড সহায়তা" />
   <meta property="og:description" content="ধানমন্ডির উন্নতমানের হাসপাতালে লাইভ আইসিইউ ও ভেন্টিলেটর বেড বুকিং। কোনো অগ্রিম বিকাশ চার্জ নেই।" />
-  <meta property="og:image" content="https://emergency-care-bd.vercel.app/icu-hero.png" />
+  <meta property="og:image" content="https://www.emergencycarebd.site/icu-hero.png" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://emergency-care-bd.vercel.app/" />
+  <meta property="twitter:url" content="https://www.emergencycarebd.site/" />
   <meta property="twitter:title" content="Emergency Care BD | ঢাকায় জরুরি আইসিইউ ও ভেন্টিলেটর বেড সহায়তা" />
   <meta property="twitter:description" content="রোগী ঢাকায় পৌঁছানোর আগেই ভেন্টিলেটর বেড প্রস্তুত রাখুন।" />
-  <meta property="twitter:image" content="https://emergency-care-bd.vercel.app/icu-hero.png" />
+  <meta property="twitter:image" content="https://www.emergencycarebd.site/icu-hero.png" />
 
   <!-- Structured Data (JSON-LD) for GEO -->
+  
+  <!-- Complete 2026 Semantic Knowledge Graph & GEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    "name": "Emergency Care BD",
-    "alternateName": ["ইমার্জেন্সি কেয়ার বিডি", "Emergency Care Bangladesh"],
-    "url": "https://emergency-care-bd.vercel.app",
-    "logo": "https://emergency-care-bd.vercel.app/logo.png",
-    "image": "https://emergency-care-bd.vercel.app/icu-hero.png",
-    "telephone": "+8801716788301",
-    "contactPoint": [
+    "@graph": [
       {
-        "@type": "ContactPoint",
+        "@type": ["MedicalOrganization", "EmergencyService"],
+        "@id": "https://www.emergencycarebd.site/#organization",
+        "name": "Emergency Care BD",
+        "alternateName": [
+          "ইমার্জেন্সি কেয়ার বিডি",
+          "Emergency Care Bangladesh",
+          "EmergencyCareBD",
+          "Emergency Care BD Dhaka"
+        ],
+        "url": "https://www.emergencycarebd.site",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.emergencycarebd.site/footer-logo.png",
+          "width": "800",
+          "height": "800"
+        },
+        "image": "https://www.emergencycarebd.site/icu-hero.png",
         "telephone": "+8801716788301",
-        "contactType": "emergency",
-        "areaServed": "BD",
-        "availableLanguage": ["Bengali", "English"]
+        "priceRange": "0",
+        "currenciesAccepted": "BDT",
+        "paymentAccepted": "Direct Hospital Admission, No Advance Agency Fee",
+        "sameAs": [
+        "https://www.facebook.com/share/1FCbPkxwB8/",
+        "https://www.instagram.com/emergencycarebd",
+        "https://youtube.com/@emergencycarebd",
+        "https://www.tiktok.com/@emergencycarebd",
+        "https://vm.tiktok.com/ZS9yspR1hvdba-wlpy1/"
+],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Dhanmondi",
+          "addressLocality": "Dhaka",
+          "postalCode": "1205",
+          "addressCountry": "BD"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "23.7465",
+          "longitude": "90.3760"
+        },
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+8801716788301",
+            "contactType": "emergency",
+            "areaServed": "BD",
+            "availableLanguage": ["Bengali", "English"],
+            "hoursAvailable": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          }
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "Bangladesh",
+          "identifier": "BD",
+          "description": "Serving critical emergency patients referred from all 64 districts of Bangladesh to Dhaka hospitals."
+        },
+        "description": "Emergency Care BD is Bangladesh's dedicated 24/7 critical care referral and bed coordination platform, providing rapid admission to verified ICU, NICU, PICU, CCU beds and ventilators in Dhanmondi, Dhaka with zero advance fee and zero commission.",
+        "medicalSpecialty": [
+          "EmergencyMedicine",
+          "CriticalCare",
+          "PediatricIntensiveCare",
+          "NeonatalIntensiveCare",
+          "Cardiology"
+        ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Emergency Critical Care Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Emergency ICU Bed Booking (আইসিইউ বেড বুকিং)",
+                "description": "Rapid ICU bed booking and mechanical ventilator support in verified Dhanmondi hospitals before patient arrival."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Neonatal & Pediatric Intensive Care (NICU & PICU বেড)",
+                "description": "Specialized incubator and pediatric ventilator beds for premature and critically ill newborns."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "MedicalProcedure",
+                "name": "Coronary Care Unit (CCU / সিসিইউ বেড)",
+                "description": "Immediate admission for acute myocardial infarction, heart failure, and cardiogenic shock with interventional cardiology support."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Inter-District ICU Ambulance Transit Coordination",
+                "description": "Highway oxygen planning and continuous bed coordination while the patient travels to Dhaka."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.emergencycarebd.site/#website",
+        "url": "https://www.emergencycarebd.site",
+        "name": "Emergency Care BD",
+        "publisher": {
+          "@id": "https://www.emergencycarebd.site/#organization"
+        },
+        "inLanguage": "bn-BD"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.emergencycarebd.site/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Emergency Care BD কীভাবে কাজ করে এবং রোগীর জন্য বেড কীভাবে নিশ্চিত করে?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "দেশের যেকোনো জেলা শহর থেকে রোগী ঢাকার উদ্দেশ্যে রওনা দেওয়ার সাথে সাথে 01716788301 নম্বরে কল করলে আমাদের ডাক্তাররা রোগীর চিকিৎসাপত্র ও টেস্ট রিপোর্ট যাচাই করে ধানমন্ডির বিশ্বস্ত হাসপাতালে আইসিইউ, সিসিইউ, এনআইসিইউ বা ভেন্টিলেটর বেড প্রস্তুত রাখেন। অ্যাম্বুলেন্স পৌঁছানোর আগেই হাসপাতালে লাইফ-সাপোর্ট সক্রিয় থাকে।"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Emergency Care BD কি কোনো অগ্রিম চার্জ বা বিকাশ ফি নেয়?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "না। Emergency Care BD কোনো অগ্রিম বিকাশ, নগদ বা বুকিং ফি নেয় না। রোগী সরাসরি হাসপাতালে এসে অফিশিয়াল কাউন্টারে ভর্তি হবেন। আমাদের সেবা সম্পূর্ণ মধ্যস্বত্বভোগী ও দালালমুক্ত।"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "জেলা শহর থেকে ঢাকায় রোগী আনার সময় অ্যাম্বুলেন্সে কতটুকু অক্সিজেন ব্যাকআপ প্রয়োজন?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "হাইওয়ে ট্রানজিটে 4 থেকে 6 ঘণ্টার যাত্রাপথে একজন মুমূর্ষু রোগীর জন্য কমপক্ষে 3,000 থেকে 4,000 লিটার অক্সিজেন সিলিন্ডার ব্যাকআপ থাকা জরুরি। রওনা দেওয়ার আগেই ড্রাইভার ও টেকনিশিয়ানের সাথে সিলিন্ডারের প্রেশার মিটার যাচাই করা উচিত।"
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "নবজাতকের জন্য এনআইসিইউ (NICU) বেড কখন জরুরি হয়?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "অপরিণত জন্ম (Preterm), জন্মের পর কান্না না করা, তীব্র শ্বাসকষ্ট, নবজাতকের জন্ডিস বা খিঁচুনি দেখা দিলে তাৎক্ষণিক এনআইসিইউ বেড প্রয়োজন হয় যেখানে ইনকিউবেটর ও বেবি ভেন্টিলেটর সাপোর্ট রয়েছে।"
+            }
+          }
+        ]
       }
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Dhanmondi",
-      "addressLocality": "Dhaka",
-      "addressCountry": "BD"
-    },
-    "description": "Emergency Care BD connects patients from all 64 districts of Bangladesh with verified ICU, NICU, PICU, and CCU hospital beds and ventilators in Dhanmondi, Dhaka before arrival.",
-    "medicalSpecialty": [
-      "EmergencyMedicine",
-      "CriticalCare",
-      "PediatricIntensiveCare",
-      "NeonatalIntensiveCare",
-      "Cardiology"
     ]
   }
   </script>
@@ -813,6 +944,7 @@ c4 26 5 51 4 56 -2 6 -28 -2 -56 -17z" />
   </section>
 
     <!-- FOOTER -->
+    <!-- FOOTER -->
   <footer class="bg-slate-900 text-slate-400 py-10 px-4 sm:px-6 text-center text-xs">
     <div class="max-w-6xl mx-auto space-y-4">
       <div class="flex items-center justify-center gap-2.5">
@@ -822,6 +954,23 @@ c4 26 5 51 4 56 -2 6 -28 -2 -56 -17z" />
       <div class="text-slate-300 font-bold text-xs sm:text-sm">
         24 ঘণ্টা জরুরি হটলাইন: <a href="tel:01716788301" class="text-white underline font-black hover:text-red-400 transition">01716788301</a> | অবস্থান: ধানমন্ডি এলাকা, ঢাকা
       </div>
+
+      <!-- Official Verified Social Links (rel="me" Web of Trust) -->
+      <div class="flex items-center justify-center gap-4 pt-2">
+        <a href="https://www.facebook.com/share/1FCbPkxwB8/" target="_blank" rel="noopener noreferrer me" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-[#1877F2] text-slate-300 hover:text-white flex items-center justify-center transition duration-200 shadow-sm" aria-label="Emergency Care BD Facebook">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/emergencycarebd" target="_blank" rel="noopener noreferrer me" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF] text-slate-300 hover:text-white flex items-center justify-center transition duration-200 shadow-sm" aria-label="Emergency Care BD Instagram">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://youtube.com/@emergencycarebd" target="_blank" rel="noopener noreferrer me" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-[#FF0000] text-slate-300 hover:text-white flex items-center justify-center transition duration-200 shadow-sm" aria-label="Emergency Care BD YouTube">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://vm.tiktok.com/ZS9yspR1hvdba-wlpy1/" target="_blank" rel="noopener noreferrer me" class="w-8 h-8 rounded-full bg-slate-800 hover:bg-black text-slate-300 hover:text-white flex items-center justify-center transition duration-200 shadow-sm" aria-label="Emergency Care BD TikTok">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.99v9.19c0 1.54-.35 3.12-1.22 4.41-1.07 1.58-2.82 2.61-4.72 2.8-1.57.16-3.21-.13-4.57-.96-1.69-1.03-2.85-2.84-3.11-4.81-.31-2.3.43-4.71 2.01-6.38 1.63-1.72 4.08-2.47 6.36-1.93.02 1.45.01 2.91.01 4.36-.93-.31-1.99-.28-2.89.13-.88.4-1.51 1.2-1.74 2.13-.37 1.44.25 3.09 1.53 3.86 1.05.63 2.41.64 3.48.06.84-.46 1.39-1.33 1.46-2.29.07-2.73.04-5.46.04-8.19 0-3.88 0-7.76.01-11.64z"/></svg>
+        </a>
+      </div>
+
       <div class="pt-4 border-t border-slate-800 text-slate-500 text-[11px]">
         &copy; 2026 Emergency Care BD. সর্বস্বত্ব সংরক্ষিত।
       </div>

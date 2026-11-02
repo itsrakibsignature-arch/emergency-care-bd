@@ -1,10 +1,10 @@
 User-agent: *
 Allow: /
 Disallow: /scratch/
-Disallow: /emergency-care-bd.zip
 Disallow: /*.backup.html
+Disallow: /diff_checker.js
 
-# Explicitly allow major LLM search crawlers for GEO
+# Generative Engine Optimization (GEO) & LLM Search Crawlers
 User-agent: GPTBot
 Allow: /
 
@@ -20,4 +20,22 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://emergency-care-bd.vercel.app/sitemap.xml
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+Sitemap: https://www.emergencycarebd.site/sitemap.xml
