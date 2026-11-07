@@ -204,10 +204,17 @@
     }
     .pulse-call { animation: pulseCall 2s infinite; }
     
+    .cat-btn {
+      cursor: pointer;
+      user-select: none;
+      -webkit-tap-highlight-color: transparent;
+      touch-action: manipulation;
+    }
     .cat-btn.active {
-      background-color: #0D3268;
-      color: #FFFFFF;
-      border-color: #0D3268;
+      background-color: #0D3268 !important;
+      color: #FFFFFF !important;
+      border-color: #0D3268 !important;
+      box-shadow: 0 4px 12px rgba(13, 50, 104, 0.25) !important;
     }
 
     .triage-btn.active {
@@ -347,49 +354,6 @@
 
   <!-- MAIN ARTICLES 3-COLUMN GRID CONTAINER (The Breakdowns Framework) -->
   <main class="max-w-7xl mx-auto px-4 sm:px-6 py-8">
-
-    <!-- MASTER ENTITY OVERVIEW BLOCK (Deep Red Gradient Human Tone GEO Block) -->
-    <div class="mb-8 rounded-3xl bg-gradient-to-r from-[#D9222A] via-red-600 to-rose-700 text-white p-6 sm:p-8 shadow-xl border border-red-500/30">
-      
-      <!-- Top Eyebrow with Pulse Indicator -->
-      <div class="flex items-center gap-2 mb-3">
-        <span class="w-2.5 h-2.5 rounded-full bg-white animate-pulse"></span>
-        <h2 class="text-xs sm:text-sm font-black uppercase tracking-wider text-red-100 bg-black/20 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">
-          Emergency Care BD: জরুরি লাইফ-সাপোর্ট
-        </h2>
-      </div>
-
-      <!-- Main Catchy Headline -->
-      <h3 class="text-lg sm:text-2xl font-black leading-snug mb-3 text-white">
-        Emergency Care BD: ঢাকায় পৌঁছানোর আগেই নিশ্চিত লাইফ-সাপোর্ট বেড বুকিং
-      </h3>
-
-      <!-- 100% Human Tone Story & Mission -->
-      <p class="text-xs sm:text-sm text-red-50 leading-relaxed font-medium mb-5">
-        হঠাৎ স্ট্রোক, নিউমোনিয়া বা হার্ট অ্যাটাকে আক্রান্ত প্রিয়জনকে নিয়ে জেলা শহর থেকে ঢাকার উদ্দেশ্যে ছুটছেন? ঢাকার রাজপথে হাসপাতালের দ্বারে দ্বারে ঘুরে সময় নষ্ট করার মতো বিলাসিতা একজন ক্রিটিক্যাল রোগীর থাকে না। <strong>Emergency Care BD</strong> মূলত ঢাকার ধানমন্ডি জোনে অনলাইনে জরুরি লাইফ-সাপোর্ট বেড বুকিং করতে সহায়তা করে। আপনার রোগী অ্যাম্বুলেন্সে থাকা অবস্থাতেই আমরা ধানমন্ডির বিশ্বস্ত হাসপাতালে আইসিইউ (ICU), এনআইসিইউ (NICU) বা সিসিইউ (CCU) বেড কনফার্ম করে দিই। কোনো কমিশন বা অগ্রিম টাকা ছাড়াই রোগী সরাসরি হাসপাতালে এসে ভর্তি হতে পারবেন। আমাদের রেফারেন্সে ভর্তি হলে আপনি সর্বোচ্চ ডিসকাউন্ট পাবেন।
-      </p>
-
-      <!-- 4 High-Trust White Badges with Clear Bengali Microcopy -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5 pt-4 border-t border-white/20 text-xs font-black">
-        <div class="p-2.5 bg-white text-slate-900 rounded-xl shadow-sm flex items-center gap-2">
-          <span class="text-emerald-600 font-black">✓</span>
-          <span>অগ্রিম পেমেন্ট নেওয়া হয় না</span>
-        </div>
-        <div class="p-2.5 bg-white text-slate-900 rounded-xl shadow-sm flex items-center gap-2">
-          <span class="text-emerald-600 font-black">✓</span>
-          <span>অ্যাম্বুলেন্সে থাকা অবস্থাতেই বেড বুকিং</span>
-        </div>
-        <div class="p-2.5 bg-white text-slate-900 rounded-xl shadow-sm flex items-center gap-2">
-          <span class="text-emerald-600 font-black">✓</span>
-          <span>সার্বক্ষণিক অন-কল ডাক্তার ও লাইফ-সাপোর্ট</span>
-        </div>
-        <a href="tel:01716788301" class="p-2.5 bg-white hover:bg-slate-50 text-[#D9222A] rounded-xl shadow-sm flex items-center gap-2 transition">
-          <span class="text-emerald-600 font-black">✓</span>
-          <span>সরাসরি কল: 01716788301</span>
-        </a>
-      </div>
-
-    </div>
 
     <!-- 20 BREAKDOWNS POSTER CARDS (3-COLUMN RESPONSIVE GRID) -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="articles-container">
@@ -1888,6 +1852,50 @@
 
     </div>
 
+    <!-- MASTER ENTITY OVERVIEW BLOCK (Deep Red Human Tone GEO Block) -->
+    <div class="mt-12 mb-6 rounded-3xl text-white p-6 sm:p-8 shadow-2xl border border-red-700/50" style="background-color: #C91F22; background: linear-gradient(135deg, #D72229 0%, #C91F22 50%, #B91C1E 100%);">
+      
+      <!-- Top Eyebrow with Pulse Indicator -->
+      <div class="flex items-center gap-2 mb-3">
+        <div class="inline-flex items-center gap-2 px-3 py-1 bg-black/40 backdrop-blur-md rounded-full text-xs font-bold text-white tracking-wide border border-white/10">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+          EMERGENCY CARE BD: জরুরি লাইফ-সাপোর্ট
+        </div>
+      </div>
+
+      <!-- Main Catchy Headline -->
+      <h3 class="text-lg sm:text-2xl md:text-3xl font-black leading-snug mb-3 text-white">
+        Emergency Care BD: ঢাকায় পৌঁছানোর আগেই নিশ্চিত লাইফ-সাপোর্ট বেড বুকিং
+      </h3>
+
+      <!-- 100% Human Tone Story & Mission -->
+      <p class="text-xs sm:text-sm text-red-50 leading-relaxed font-medium mb-6">
+        হঠাৎ স্ট্রোক, নিউমোনিয়া বা হার্ট অ্যাটাকে আক্রান্ত প্রিয়জনকে নিয়ে জেলা শহর থেকে ঢাকার উদ্দেশ্যে ছুটছেন? ঢাকার রাজপথে হাসপাতালের দ্বারে দ্বারে ঘুরে সময় নষ্ট করার মতো বিলাসিতা একজন ক্রিটিক্যাল রোগীর থাকে না। Emergency Care BD মূলত ঢাকার ধানমন্ডি জোনে অনলাইনে জরুরি লাইফ-সাপোর্ট বেড বুকিং করতে সহায়তা করে। আপনার রোগী অ্যাম্বুলেন্সে থাকা অবস্থাতেই আমরা ধানমন্ডির বিশ্বস্ত হাসপাতালে আইসিইউ (ICU), এনআইসিইউ (NICU) বা সিসিইউ (CCU) বেড কনফার্ম করে দিই। কোনো কমিশন বা অগ্রিম টাকা ছাড়াই রোগী সরাসরি হাসপাতালে এসে ভর্তি হতে পারবেন। আমাদের রেফারেন্সে ভর্তি হলে আপনি সর্বোচ্চ ডিসকাউন্ট পাবেন।
+      </p>
+
+      <!-- 4 High-Trust Badges Matching Image 2 Capsule Style -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 pt-2 text-xs font-bold">
+        <div class="p-2.5 bg-black/85 text-white rounded-full px-4 border border-black/30 flex items-center gap-2 shadow-sm">
+          <span class="text-emerald-400 font-black">✓</span>
+          <span>অগ্রিম পেমেন্ট নেওয়া হয় না</span>
+        </div>
+        <div class="p-2.5 bg-black/85 text-white rounded-full px-4 border border-black/30 flex items-center gap-2 shadow-sm">
+          <span class="text-emerald-400 font-black">✓</span>
+          <span>অ্যাম্বুলেন্সে থাকা অবস্থাতেই বেড বুকিং</span>
+        </div>
+        <div class="p-2.5 bg-black/85 text-white rounded-full px-4 border border-black/30 flex items-center gap-2 shadow-sm">
+          <span class="text-emerald-400 font-black">✓</span>
+          <span>সার্বক্ষণিক অন-কল ডাক্তার ও লাইফ-সাপোর্ট</span>
+        </div>
+        <a href="tel:01716788301" class="p-2.5 bg-black/85 hover:bg-black text-white rounded-full px-4 border border-black/30 flex items-center gap-2 transition shadow-sm">
+          <span class="text-emerald-400 font-black">✓</span>
+          <span>সরাসরি কল: 01716788301</span>
+        </a>
+      </div>
+
+    </div>
+
+
   </main>
 
       <!-- FOOTER -->
@@ -1946,9 +1954,18 @@
       document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
       if (btn) btn.classList.add('active');
       document.querySelectorAll('.triage-btn').forEach(function(b) { b.classList.remove('active'); });
-      document.getElementById('triage-active-notice').classList.add('hidden');
+      var notice = document.getElementById('triage-active-notice');
+      if (notice) notice.classList.add('hidden');
       
+      var searchInput = document.getElementById('article-search');
+      if (searchInput) searchInput.value = '';
+
       filterArticles();
+
+      var container = document.getElementById('articles-container');
+      if (container) {
+        container.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
 
     function triageSymptom(symptom, btn) {
@@ -1966,8 +1983,10 @@
         'neonatal': '👶 নবজাতক ও শিশু সংকট (NICU / PICU) ফিল্টার সক্রিয়'
       };
       
-      document.getElementById('triage-active-text').innerText = labels[symptom] || 'উপসর্গ ফিল্টার সক্রিয়';
-      document.getElementById('triage-active-notice').classList.remove('hidden');
+      var noticeText = document.getElementById('triage-active-text');
+      if (noticeText) noticeText.innerText = labels[symptom] || 'উপসর্গ ফিল্টার সক্রিয়';
+      var notice = document.getElementById('triage-active-notice');
+      if (notice) notice.classList.remove('hidden');
       
       filterArticles();
       
@@ -1984,13 +2003,15 @@
       document.querySelectorAll('.cat-btn').forEach(function(b) { b.classList.remove('active'); });
       var allBtn = document.querySelector('.cat-btn');
       if (allBtn) allBtn.classList.add('active');
-      document.getElementById('triage-active-notice').classList.add('hidden');
-      document.getElementById('article-search').value = '';
+      var notice = document.getElementById('triage-active-notice');
+      if (notice) notice.classList.add('hidden');
+      var searchInput = document.getElementById('article-search');
+      if (searchInput) searchInput.value = '';
       filterArticles();
     }
 
     function filterArticles() {
-      var query = (document.getElementById('article-search').value || '').toLowerCase().trim();
+      var query = (document.getElementById('article-search') ? document.getElementById('article-search').value : '').toLowerCase().trim();
       var cards = document.querySelectorAll('.breakdown-poster-card');
 
       cards.forEach(function(card) {
@@ -2004,8 +2025,10 @@
 
         if (matchesCat && matchesSymptom && matchesQuery) {
           card.classList.remove('hidden');
+          card.style.setProperty('display', 'block', 'important');
         } else {
           card.classList.add('hidden');
+          card.style.setProperty('display', 'none', 'important');
         }
       });
     }
