@@ -205,6 +205,17 @@
       <div id="article-body" class="article-prose mt-6">
         <!-- Dynamic content injected from articles_data.js -->
       </div>
+      <!-- RED THEME CTA FOR FIRST 20 ARTICLES (All without Zilla Transfer Guide) -->
+      <div id="general-article-cta" class="hidden my-8 p-6 sm:p-8 rounded-3xl text-white text-center space-y-3 shadow-xl border border-red-700/40" style="background-color: #C91F22; background: linear-gradient(135deg, #D72229 0%, #C91F22 50%, #B91C1E 100%);">
+        <div class="text-xs uppercase font-bold tracking-widest text-red-100/90">24 ঘণ্টা জরুরি সহায়তা ডেস্ক</div>
+        <h4 class="text-xl sm:text-2xl font-black text-white leading-snug">একটি ছোট্ট সহায়তামূলক বার্তা</h4>
+        <p class="text-xs sm:text-sm text-red-100 max-w-lg mx-auto leading-relaxed">মুমূর্ষু রোগীর চিকিৎসায় প্রতিটি মিনিট মহামূল্যবান। ঢাকার কোনো হাসপাতালে লাইফ-সাপোর্ট বেড বা রেফারেল সহায়তায় নিঃস্বার্থ পরামর্শের প্রয়োজন হলে আমাদের টিম 24 ঘণ্টাই পাশে আছে।</p>
+        <div class="flex flex-wrap justify-center gap-3 pt-2">
+          <a href="tel:01716788301" class="py-2.5 px-6 rounded-xl bg-[#18181b] hover:bg-black text-white font-black text-sm shadow-md transition flex items-center justify-center gap-2 border border-black/40"><span class="text-rose-500">📞</span> জরুরি পরামর্শ: 01716788301</a>
+          <a href="https://wa.me/8801716788301" target="_blank" class="py-2.5 px-6 rounded-xl bg-[#10b981] hover:bg-emerald-600 text-white font-black text-sm shadow-md transition flex items-center justify-center gap-2 border border-emerald-600/40"><span class="text-white">💬</span> হোয়াটসঅ্যাপে কথা বলুন</a>
+        </div>
+      </div>
+
 
       <!-- Article Navigation (Prev / Next Buttons) -->
       <div class="mt-10 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
@@ -776,6 +787,15 @@ if (typeof module !== 'undefined' && module.exports) {
       document.getElementById('article-image').alt = article.title;
       document.getElementById('article-caption').innerText = article.teaser;
       document.getElementById('article-body').innerHTML = article.story;
+      // Display Red Theme CTA for first 20 articles (all without Zilla Transfer Guide)
+      var generalCta = document.getElementById('general-article-cta');
+      if (generalCta) {
+        if (article.catId !== 'district' && article.id <= 20) {
+          generalCta.classList.remove('hidden');
+        } else {
+          generalCta.classList.add('hidden');
+        }
+      }
 
       // Update Meta Tags & Dynamic 2026 Schema for GEO / Social
       var articleUrl = 'https://www.emergencycarebd.site/article.html?id=' + article.id;
